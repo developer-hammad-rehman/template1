@@ -1,8 +1,6 @@
-Here is the revised document with a more appropriate title:
-
 ---
 
-# **Ecome Product API - GET /api/products**
+# **Template1 Product API - GET /api/products**
 
 ### **Base URL:**
 ```
