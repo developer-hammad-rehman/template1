@@ -1,4 +1,6 @@
-export default {
+import { defineType } from "sanity"
+
+export default defineType({
     name: 'products',
     title: 'Products',
     type: 'document',
@@ -36,6 +38,16 @@ export default {
                    {title: 'Shirt', value: 'shirt'} ,
                 ]
             }
+        },
+        {
+            name:"discountPercent",
+            title:"Discount Percent",
+            type: 'number',
+        },
+        {
+            name:"new",
+            type: 'boolean',
+            title:"New",
         }
     ],
-}
+})

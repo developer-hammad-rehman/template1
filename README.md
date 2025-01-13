@@ -1,3 +1,6 @@
+
+---
+
 # **Template Product API - GET /api/products**
 
 ### **Base URL:**
@@ -6,30 +9,36 @@ https://template1-neon-nu.vercel.app/api/products
 ```
 
 ### **Description:**
-This endpoint retrieves a list of products available in the store. Each product includes details such as the name, description, price, category, and an image URL. Below is an example response for a single product.
+This endpoint retrieves a list of products available in the store. Each product includes detailed information such as the product's name, description, price, category, discount percentage, availability status, and an image URL. The response provides an array of products in JSON format.
 
 ### **Example Response:**
 ```json
 [
-{
-  "category": "tshirt",
-  "_id": "4857042c-6958-4bda-b214-866994e35052",
-  "name": "Gradient Graphic T-shirt",
-  "description": "Add a bold and artistic touch to your wardrobe with this unique graphic t-shirt. Featuring an eye-catching abstract swirl design in vibrant colors, it exudes energy and individuality. The \"Just Walk Forward\" slogan adds a motivational element, making this tee perfect for those who love to express themselves.\n\nKey Features:\n\nHigh-quality fabric for ultimate comfort and durability\nModern, unisex design suitable for casual outings or statement looks\nRelaxed fit with a classic crew neckline\nUnique printed details for a one-of-a-kind style\nPair it with jeans, joggers, or shorts to create a standout look!",
-  "price": 145,
-  "imageUrl": "https://cdn.sanity.io/images/7xt4qcah/production/701cf9bdf7e58564aae72eb5b76896f02a1d4115-295x298.png"
-}
+  {
+    "imageUrl": "https://cdn.sanity.io/images/7xt4qcah/production/4e2ed6a9eaa6e1413843e53f3113ccfd2104c301-278x296.png",
+    "category": "hoodie",
+    "discountPercent": 20,
+    "isNew": true,
+    "_id": "0dc7c847-8599-45d0-b02c-34429f7a639e",
+    "name": "Casual Green Bomber Jacket",
+    "description": "This stylish green bomber jacket offers a sleek and modern twist on a classic design. Made from soft and comfortable fabric, it features snap buttons and ribbed cuffs, giving it a sporty yet refined look. The minimalist style makes it perfect for layering over casual t-shirts or hoodies. Whether you're out with friends or just lounging, this jacket provides a laid-back yet fashionable vibe. Its muted green color adds a subtle, earthy tone that pairs well with a variety of outfits, making it a versatile addition to your casual wardrobe.",
+    "price": 300
+  }
 ]
 ```
 
-### **Fields:**
+### **Response Fields:**
 - **_id** (string): The unique identifier for the product.
 - **name** (string): The name of the product.
 - **description** (string): A detailed description of the product, including key features.
-- **price** (number): The price of the product.
-- **category** (string): The category to which the product belongs (e.g., tshirt, jeans).
+- **price** (number): The price of the product (in the store's currency).
+- **category** (string): The category to which the product belongs (e.g., hoodie, t-shirt, jeans).
 - **imageUrl** (string): A URL to an image of the product.
+- **discountPercent** (number, optional): The discount percentage applied to the product, if any (e.g., 20 for 20% off).
+- **isNew** (boolean, optional): Indicates whether the product is new (true/false).
+
+---
+
+This document provides details on how to interact with the `/api/products` endpoint to retrieve product information from the store's catalog.
 
 --- 
-
-This document provides details on how to interact with the `/api/products` endpoint to retrieve product information.
