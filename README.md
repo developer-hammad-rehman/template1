@@ -1,7 +1,4 @@
-
----
-
-# **Temeplate1 Product API - GET /api/products**
+# **Template Product API - GET /api/products**
 
 ### **Base URL:**
 ```
