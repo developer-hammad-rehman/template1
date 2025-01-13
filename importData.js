@@ -61,7 +61,7 @@ async function uploadProduct(product) {
 
 async function importProducts() {
   try {
-    const response = await fetch('https://templeate1.vercel.app/api/products');
+    const response = await fetch('https://template1-neon-nu.vercel.app/api/products');
     
     // Ensure the response is valid
     if (!response.ok) {

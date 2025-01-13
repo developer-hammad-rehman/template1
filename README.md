@@ -1,12 +1,11 @@
-Here is the revised document with a more appropriate title:
 
 ---
 
-# **Ecome Product API - GET /api/products**
+# **Temeplate1 Product API - GET /api/products**
 
 ### **Base URL:**
 ```
-https://templeate1.vercel.app/api/products
+https://template1-neon-nu.vercel.app/api/products
 ```
 
 ### **Description:**
@@ -14,6 +13,7 @@ This endpoint retrieves a list of products available in the store. Each product 
 
 ### **Example Response:**
 ```json
+[
 {
   "category": "tshirt",
   "_id": "4857042c-6958-4bda-b214-866994e35052",
@@ -22,6 +22,7 @@ This endpoint retrieves a list of products available in the store. Each product 
   "price": 145,
   "imageUrl": "https://cdn.sanity.io/images/7xt4qcah/production/701cf9bdf7e58564aae72eb5b76896f02a1d4115-295x298.png"
 }
+]
 ```
 
 ### **Fields:**
