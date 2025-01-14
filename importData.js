@@ -39,7 +39,7 @@ async function uploadProduct(product) {
 
     if (imageId) {
       const document = {
-        _type: 'product',
+        _type: 'products',
         name: product.name,
         description: product.description,
         price: product.price,
