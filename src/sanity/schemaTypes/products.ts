@@ -48,6 +48,22 @@ export default defineType({
             name:"new",
             type: 'boolean',
             title:"New",
+        },
+        {
+            name:"colors",
+            title:"Colors",
+            type: 'array',
+            of:[
+                {type: 'string'}
+            ]
+        },
+        {
+            name:"sizes",
+            title:"Sizes",
+            type: 'array',
+            of:[
+                {type: 'string'}
+            ]
         }
     ],
 })

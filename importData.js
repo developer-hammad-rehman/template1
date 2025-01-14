@@ -8,7 +8,6 @@ const client = createClient({
   token: 'your-auth-token',
 });
 
-
 async function uploadImageToSanity(imageUrl) {
   try {
     console.log(`Uploading image: ${imageUrl}`);
@@ -52,6 +51,8 @@ async function uploadProduct(product) {
         category: product.category,
         discountPercent: product.discountPercent,
         isNew: product.isNew,
+        colors: product.colors,
+        sizes: product.sizes
       };
 
       const createdProduct = await client.create(document);

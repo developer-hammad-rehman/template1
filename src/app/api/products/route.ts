@@ -11,7 +11,9 @@ export async function GET() {
   "imageUrl" : image.asset->url,
   category,
   discountPercent,
-  "isNew": new
+  "isNew": new,
+  colors,
+  sizes
 }
     `);
     return NextResponse.json(data);
